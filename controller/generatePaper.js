@@ -8,7 +8,10 @@ const generatePaper=async(req, res) => {
     return res.status(400).json({ error: 'Bad Request. Please provide totalMarks and distribution in the request body.' });
   }
 
-  const questionPaper = generateQuestionPaper(totalMarks, distribution);
+  const questionPaper = await generateQuestionPaper(totalMarks, distribution);
+  
+  if(!questionPaper) return res.status(400).json({ error: 'Bad Request. Please provide valid distribution in the request body.' });
+  
   res.status(200).json({ questionPaper });
 } 
 

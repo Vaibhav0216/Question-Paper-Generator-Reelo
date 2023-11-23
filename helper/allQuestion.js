@@ -1,12 +1,13 @@
 import express from 'express';
 import Question from '../models/question.js';
 
-const getAllQuestions=async(req,res)=>{
+const getAllQuestions=async()=>{
   try {
     const questions = await Question.find();
-    res.status(201).json(questions);
+    return questions;
   } catch (err) {
-    res.status(500).json({ message: err });
+    console.log(err);
+    return { message: err };
   }
 } 
 
@@ -15,3 +16,4 @@ export default getAllQuestions;
 
 
 
+ 
