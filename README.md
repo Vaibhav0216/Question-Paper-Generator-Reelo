@@ -82,7 +82,8 @@ Welcome to the Question Paper Generator, a Node.js application designed to creat
 
 ## Demo
 
-[https://drive.google.com/file/d/1-vm-aIiJA6ayjvAa3gNvyPHmbwj3IMje/view?usp=drive_link]
+https://github.com/Vaibhav0216/Question-Paper-Generator-Reelo/assets/92253900/5e536f03-954c-4a2e-9017-da0fcb3675fb
+
 
 ## Testing
 
