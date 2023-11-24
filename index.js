@@ -15,6 +15,11 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/', (req, res) => {
+  res.send('Welcome to Question Paper Generator API');
+});
+
+
 app.use('/', createQuestionRouter);
 app.use('/', generatePaperRouter);
  
