@@ -1,4 +1,87 @@
 # [Question Paper Generator](https://question-paper-generator-reelo-frontend.vercel.app/)
+- [client](https://question-paper-generator-reelo-frontend.vercel.app/)  
+
+- [server](https://question-paper-vaibhav.onrender.com/)
+
+## Overview
+
+Welcome to the Question Paper Generator, a Node.js application designed to create question papers based on specified criteria. This repository contains the code for the application, allowing you to generate question papers with ease. Questions are stored on a MongoDB server.
+
+## Features
+
+- **Modular and Extensible:** The code is designed to be modular and extensible, following best practices and community conventions. Easily scale the application with new requirements.
+
+- **MongoDB Integration:** Questions are now stored on a MongoDB server. The application connects to the database to fetch questions for paper generation.
+
+- **Criteria Configuration:** Define questions in the MongoDB database and adjust criteria for generating question papers in the `questionPaperGenerator.js` file.
+
+- **Example Usage:** The README provides clear examples of setting up the application, connecting to MongoDB, defining questions, and generating question papers.
+
+- **Controllers:**
+  - `createQuestion.js`: Controller for creating and storing questions.
+  - `generatePaper.js`: Controller for generating question papers.
+
+- **Helpers:**
+  - `allQuestion.js`: Helper function for fetching all questions from the question store.
+  - `generateQuestionPaper.js`: Helper function for generating a question paper based on specified criteria.
+
+- **Models:**
+  - `question.js`: Model representing the structure of a question with attributes like question, subject, topic, difficulty, and marks.
+
+- **Node Modules:** External packages and dependencies installed using npm.
+
+- **Routes:**
+  - `allQuestions.routes.js`: Routes for fetching all questions.
+  - `createQuestion.routes.js`: Routes for creating and storing questions.
+  - `generatePaper.routes.js`: Routes for generating question papers.
+
+- **Environment Configuration:**
+  - `.env`: Configuration file for environment variables.
+  - `.env.sample`: Sample file for environment variables.
+
+- **Gitignore:** Specifies files and directories to be ignored by Git.
+
+- **Application Entry Point:**
+  - `index.js`: Entry point for the application.
+
+- **Package Files:**
+  - `package.json`: Configuration file for npm, specifying project details and dependencies.
+  - `package-lock.json`: Automatically generated file with version information for npm dependencies.
+
+
+## Setup
+
+1. **Install node.js:**
+
+   ```bash
+   Download and install Node.js from nodejs.org.
+
+2. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/Vaibhav0216/Question-Paper-Generator-Reelo.git
+
+3. **Navigate to the Project Directory:**
+
+   ```bash
+   cd Question-Paper-Generator-Reelo
+  
+4. **Install Dependencies:**
+  
+   ```bash 
+   npm install
+
+5. **Configure MongoDB:**
+
+   Update the MongoDB connection string in the .env file.
+   ```bash
+   MONGO_URI=your-mongodb-connection-string 
+
+6. **Run the Application:**
+
+   ```bash
+   npm start
+
 
 ## Overview
 
