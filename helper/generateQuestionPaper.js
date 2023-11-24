@@ -5,12 +5,6 @@ const generateQuestionPaper = async (totalMarks, distribution) => {
   try {
     const questionPaper = [];
 
-    if (totalMarks < 5 || totalMarks > 300 || totalMarks % 5 !== 0) {
-      throw new Error(
-        "Invalid totalMarks. It should be greater than 4, less than 300, and a multiple of 5."
-      );
-    }
-
     const difficultyLevels = {};
 
     for (const level of Object.keys(distribution)) {
